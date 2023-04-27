@@ -33,7 +33,7 @@ class ModelTrainer:
             "Ridge":Ridge(),
             "ElasticNet":ElasticNet()
            }
-             model_report=evaluate_models(X_train,y_train,X_test,y_test,models)
+             model_report:dict=evaluate_models(X_train,y_train,X_test,y_test,models)
              print(model_report)
              print("\n==============================================================")
              logging.info(f"Model Report:{model_report}")
